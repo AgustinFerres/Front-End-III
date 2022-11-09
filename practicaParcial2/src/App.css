@@ -1,0 +1,49 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #e7e7e7;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #4b58e6;
+  align-items: center;
+  padding: 50px;
+}
+
+header span {
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  align-items: center;
+  margin: 25px 0px;
+  text-align: center;
+}
+
+.cardContainer > * {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 2px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+}
