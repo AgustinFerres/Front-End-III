@@ -16,16 +16,10 @@ const Container = () => {
     }
 
     const handleCarrito = (e) => {
-        setCountCarrito(prev => prev + 1);
-        countStock[Number(e.target.id) - 1] = countStock[Number(e.target.id) - 1] - 1;
-        if (countStock[Number(e.target.id) - 1] === 0) {
-            countStock[Number(e.target.id) - 1] = "agotado";
-            buttonValue[Number(e.target.id) - 1] = "SIN STOCK";
-            
-        }
+        setCountCarrito(prev => prev + 1)
     }
     
-    const cardProps = {countStock, buttonValue, setButtonValue, handleCarrito}
+    const cardProps = {handleCarrito}
 
     return (
         <div>

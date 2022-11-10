@@ -3,6 +3,7 @@ import styled, { css } from "styled-components"
 export const CardContainer = styled.div`
 
     display: flex;
+    flex-wrap: wrap;
     margin: 20px;
     justify-content: center;
     gap: 20px;
@@ -12,7 +13,8 @@ export const CardContainer = styled.div`
 export const Product = styled.article `
 
     display: flex;
-    max-width: 400px;
+    width: 250px;
+    height: 350px;
     flex-direction: column;
     text-align: left;
     gap: 5px;
@@ -51,7 +53,7 @@ export const SpanHeader = styled.span`
 
 export const SpanCard = styled.span`
 
-    ${({main}) => main && css`
+    ${({empty}) => empty && css`
 
         background-color: #f1a2a2;
         border-radius: 5px;
@@ -65,5 +67,5 @@ export const Button = styled.button`
     border: 1px solid grey;
     background-color: lightgray;
     padding: 5px
-
+    
 `
