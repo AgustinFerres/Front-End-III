@@ -20,7 +20,7 @@ export default class Card extends Component {
         
             default:
             case "PREV":
-                this.setState({ index: this.state.index - 1 });
+                this.setState({ index: this.state.index === 0 ? arrayPokemons.length - 1 : this.state.index - 1});
                 break;
         }
     }
