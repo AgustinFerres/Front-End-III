@@ -72,7 +72,7 @@ const Card = ({id, name, demo_male, demo_female, price, handleCarrito, productsI
                             <p>{findInArray(productsInCart, id, genre).count}</p>
                         </div>
                         <img src={genre === "male" ? demo_male : demo_female} alt="" />
-                        <p>{'USD $' + getPrice(findInArray(productsInCart, id, genre).count, Number(price.slice(5, price.length)))}</p>
+                        <p>USD $ {getPrice(findInArray(productsInCart, id, genre).count, Number(price.slice(5, price.length)))}</p>
                     </Product>
                 )
             default:

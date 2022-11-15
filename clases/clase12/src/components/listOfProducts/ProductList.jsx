@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Card from './Card'
+import { Total } from './styles';
 
 const getTotal = (arr) => {
     let suma = 0;
@@ -38,7 +39,7 @@ const ProductList = ({handleCarrito, products, productsInCart, viewSelected, fin
             <section>
                 {renderProducts(viewSelected)}  
             </section>
-            {viewSelected === 'cart' && <h2>Total: {getTotal(productsInCart)}</h2>}
+            {viewSelected === 'cart' && <Total>Total: USD $ {getTotal(productsInCart)}</Total>}
         </main>
     )
 }

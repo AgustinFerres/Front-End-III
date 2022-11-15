@@ -34,6 +34,7 @@ const Store = () => {
         if (findInArray(productsInCart, id, genre).count === 1) {
           const newArray = filterArray(productsInCart, id, genre);
           setProductsInCart(newArray)
+          setCountCarrito(prev => prev - 1)
         }else {
           findInArray(productsInCart, id, genre).count -= 1;
         }
