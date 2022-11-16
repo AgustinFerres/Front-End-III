@@ -27,8 +27,8 @@ export default class Card extends Component {
 
     componentDidMount() {
         this.setState({ 
-            name: fire[this.state.index].pokemonName, 
-            imgURL: fire[this.state.index].avatar 
+            name: arrayPokemons[this.state.index].pokemonName, 
+            imgURL: arrayPokemons[this.state.index].avatar 
     })
         //LLAMADOS INICIALES A API'S.
     }
