@@ -10,3 +10,8 @@
   height: 100vh;
   background-color: black;
 }
+
+#root > div {
+  display: flex;
+  gap: 50px;
+}
