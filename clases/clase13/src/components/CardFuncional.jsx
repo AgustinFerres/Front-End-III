@@ -30,7 +30,7 @@ const CardFuncional = () => {
     
     return (
         <CardContainer>
-            <img src={pokemon?.sprites.front_default} alt={pokemon?.name} />
+            <img src={pokemon?.sprites.other["official-artwork"].front_default} alt={pokemon?.name} />
             <h1>{pokemon?.name}</h1>
             <ButtonContainer>
 
