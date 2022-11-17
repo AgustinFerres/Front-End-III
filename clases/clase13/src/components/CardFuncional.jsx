@@ -18,11 +18,11 @@ const CardFuncional = () => {
     const incrementCount = (e) => {
         switch (e.target.innerText){
             case 'NEXT':
-                setIndex(prev => prev + 1);
+                setIndex(prev => prev === 905 ? 1 : prev + 1);
                 break;
             default:
             case 'PREV':
-                setIndex(prev => prev === 1 ? prev : prev - 1);
+                setIndex(prev => prev === 1 ? 905 : prev - 1);
                 break;
         }
     }
