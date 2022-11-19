@@ -27,7 +27,7 @@ const CardComponent = ({song}) => {
             <p>{data.title}</p>
           </div>
         </CardHeader>
-        <CardMedia src='' title={data.label}/>
+        <CardMedia src={data.value} title={data.label}/>
         <CardContent>
           {data.comment}
         </CardContent>

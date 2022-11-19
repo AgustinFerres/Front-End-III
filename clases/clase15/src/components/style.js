@@ -31,12 +31,12 @@ export const Section = styled.section`
 
 `
 export const Card = styled.article`
-    aspect-ratio: 4 / 5;
-    width: 350px;
+    aspect-ratio: 3 / 4;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     box-shadow: 0px 0px 10px black;
     backface-visibility: hidden;
@@ -86,7 +86,7 @@ export const Avatar = styled.img`
 export const CardMedia = styled.iframe`
 
     aspect-ratio: 16 /  9;
-    width: 107%;
+    width: 105.5%;
     align-self: center;
     margin: 10px;
     border: none;
