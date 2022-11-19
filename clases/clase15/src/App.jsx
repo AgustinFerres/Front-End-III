@@ -37,7 +37,7 @@ function App() {
 
   useEffect( () => {
     getData();
-  }, [])
+  }, [viewSelected])
 
   const handleViewSelected = (view) => {
     switch(view) {

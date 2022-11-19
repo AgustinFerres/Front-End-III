@@ -11,8 +11,10 @@ const Header = ({setViewSelected}) => {
         break;
       case 'FAVOURITES':
         setViewSelected('favorites');
+        break;
       case 'NOT FAVOURITES': 
         setViewSelected('noFavorites');
+        break;
       default:
       case 'My Playlist':
         setViewSelected('local');
