@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
+export const Skeleton = styled.div`
 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+`
 
 export const Loading = styled.div`
 
-    border: 5px solid violet;
+    border-bottom: 5px solid violet;
     border-left: none;
-    border-top: none;
+    border-top: 1px solid violet;
+    border-right: 4px solid violet;
     aspect-ratio: 1/1;
     width: 100px;
     border-radius: 50%;
@@ -41,7 +49,6 @@ export const Card = styled.article`
     box-shadow: 0px 0px 10px black;
     backface-visibility: hidden;
     border-radius: 10px;
-
     &:hover {
         animation: forwards elevate ease-in; 
     }
@@ -52,7 +59,7 @@ export const Card = styled.article`
         }
         100%{
             transform: scale(1.05);
-            box-shadow: 0px 0px 20px black;
+            box-shadow: 0px 0px 25px black;
         }
     }
 
@@ -81,7 +88,7 @@ export const Avatar = styled.img`
 export const CardMedia = styled.iframe`
 
     aspect-ratio: 16 /  9;
-    width: 105.5%;
+    width: inherit;
     align-self: center;
     margin: 10px;
     border: none;
@@ -91,7 +98,7 @@ export const CardMedia = styled.iframe`
 
 export const CardContent = styled.p`
 
-
+    font-size: 1.2rem;
 
 `
 

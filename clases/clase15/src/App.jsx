@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import CardComponent from './components/CardComponent'
 import axios from 'axios';
-import { Loading, Section } from './components/style';
+import { Loading, Section, Skeleton } from './components/style';
 import Header from './components/Header';
 
 function findRepeated(arr) {
@@ -87,7 +87,11 @@ function App() {
               {songData.map(song => <CardComponent key={song.id} song={song}/>)}
             </Section>
           </Fragment>
-        ): <Loading/>)
+        ): (
+          <Skeleton>
+            <Loading/>
+          </Skeleton>
+        ))
     }
   }
 
