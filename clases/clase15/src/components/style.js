@@ -48,16 +48,11 @@ export const Card = styled.article`
 
     @keyframes elevate {
         0%{
-            transform: perspective(1000px) translateZ(0);
-            -webkit-font-smoothing: subpixel-antialiased;
-            -webkit-transform: translateZ(0) scale(1.0, 1.0);
-
+            transform: scale(1);
         }
         100%{
-            -webkit-transform: translateZ(100px) scale(1.0, 1.0);
-            transform: perspective(1000px) translateZ(20px);
-            -webkit-font-smoothing: subpixel-antialiased;
-            
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px black;
         }
     }
 
